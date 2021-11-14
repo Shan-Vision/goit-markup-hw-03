@@ -6,15 +6,11 @@
   --button-bgc-color: #f5f4fa;
   --header-bgc-color: #2f303a;
   --team-bgc-color: #f5f4fa;
-  --fotter-contact-color: rgba(255, 255, 255, 0.6);
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
   --header-border-color: #ececec;
   --content-border-color: #eeeeee;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 li {
   list-style: none;
 }
@@ -34,8 +30,17 @@ ul {
   padding-left: 0;
 }
 
-.hidden-title {
-  display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 body {
@@ -51,12 +56,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.container.main {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
 }
 
 .section {
@@ -105,9 +104,11 @@ body {
 .contact-item .contact-link:focus {
   color: #2196f3;
 }
+.nav{
+  margin-left: 93px;
+}
 .nav-list {
   display: flex;
-  margin-left: 93px;
 }
 .nav-list .nav-item + .nav-item {
   margin-left: 50px;
@@ -157,9 +158,16 @@ body {
 }
 
 /* Header */
-.main,
-.footer {
+.main-bgc,
+.footer-bgc {
+  width: 100%;
   background-color: var(--header-bgc-color);
+
+}
+.container.main{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .main-title {
@@ -204,11 +212,16 @@ body {
   letter-spacing: 0.03em;
 }
 /* Features */
-.section.features {
+.features-list{
   display: flex;
-  justify-content: space-between;
+  margin-right: -30px;
 }
-.features-item .features-caption {
+.features-item{
+  width: 270px;
+  margin-right: 30px;
+  flex-basis: calc((100% - 4 * 30px) / 4);
+}
+.features-caption {
   margin-bottom: 10px;
 
   text-transform: uppercase;
@@ -234,6 +247,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-top: 0;
 }
 .work-title {
   margin-bottom: 50px;
@@ -363,7 +377,7 @@ body {
 .address-item .address-contact {
   font-style: normal;
 
-  color: var(--fotter-contact-color);
+  color: var(--footer-contact-color);
 }
 .address-destination {
   display: block;
