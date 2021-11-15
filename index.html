@@ -11,8 +11,8 @@
    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-      <!-- Верхняя шапка -->
-   <header>
+      <!-- ----------------------------------------------------Header -->
+   <header class="header">
       <div class="container head">
       <a href="./index.html" rel="noopener noreferrer" class="logo" lang="en">Web<span class="logo-primary">Studio</span></a>
       <nav class="nav">
@@ -29,16 +29,16 @@
       </div>
    </header>
    <main>
-      <!-- Шапка -->
-      <section class="container main">
-         <div class="main-bgc">
+      <!------------------------------------------------------ Hero -->
+      <!-- <div class="main-bgc"> -->
+         <section class="section main">
             <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
             <button class="main-button" type="button">Заказать услугу</button>
-         </div>
-      </section>
-      <!-- Особенности -->
+         </section>
+      <!-- -----------------------------------------------Особенности -->
       <section class="section features">
-         <h2 class="visually-hidden">Особенности</h2>
+         <div class="container features">
+            <h2 class="visually-hidden">Особенности</h2>
             <ul class="features-list">
                <li class="features-item">
                   <h3 class="features-caption">Внимание к деталям</h3>
@@ -59,49 +59,59 @@
             </ul>
          </div>
       </section>
-      <!-- Чем занимаемся -->
+      <!-- ---------------------------------------------Чем занимаемся -->
       <section class="section work">
-         <h2 class="work-title">Чем мы занимаемся</h2>
-         <ul class="work-list">
-            <li class="work-item"><img class="work-image" width="370" height="294" src="./images/img.jpg" alt="кодирование"></li>
-            <li class="work-item"><img class="work-image" width="370" height="294" src="./images/img1.jpg" alt="сервис"></li>
-            <li class="work-item"><img class="work-image" width="370" height="294" src="./images/img2.jpg" alt="дизайн"></li>
-         </ul>
+         <div class="container work">
+            <h2 class="work-title">Чем мы занимаемся</h2>
+            <ul class="work-list">
+               <li class="work-item"><img class="work-image" width="370" height="294" src="./images/img.jpg" alt="кодирование"></li>
+               <li class="work-item"><img class="work-image" width="370" height="294" src="./images/img1.jpg" alt="сервис"></li>
+               <li class="work-item"><img class="work-image" width="370" height="294" src="./images/img2.jpg" alt="дизайн"></li>
+            </ul>
+         </div>
       </section>
-      <!-- Наша команда -->
-      <div class=" team">
-         <section class="section team ">
+      <!-- ---------------------------------------------Наша команда -->
+      <section class="section team ">
+         <div class="container team">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
                <li class="team-item">
                   <img width="270" height="260" src="./images/person1.jpg" alt="персонал1">
-                  <h3 class="team-caption">Игорь Демьяненко</h3>
-                  <p class="team-text" lang="en">Product Designer</p>
+                  <div class="team-box">
+                     <h3 class="team-caption">Игорь Демьяненко</h3>
+                     <p class="team-text" lang="en">Product Designer</p>
+                  </div>
                </li>
                <li class="team-item">
                   <img width="270" height="260" src="./images/person2.jpg" alt="персонал2">
-                  <h3 class="team-caption">Ольга Репина</h3>
-                  <p class="team-text" lang="en">Frontend Developer</p>
+                  <div class="team-box">
+                     <h3 class="team-caption">Ольга Репина</h3>
+                     <p class="team-text" lang="en">Frontend Developer</p>
+                  </div>
                </li>
                <li class="team-item">
                   <img width="270" height="260" src="./images/person3.jpg" alt="персонал3">
-                  <h3 class="team-caption">Николай Тарасов</h3>
-                  <p class="team-text" lang="en">Marketing</p>
+                  <div class="team-box">
+                     <h3 class="team-caption">Николай Тарасов</h3>
+                     <p class="team-text" lang="en">Marketing</p>
+                   </div>
                </li>
                <li class="team-item">
                   <img width="270" height="260" src="./images/person4.jpg" alt="персонал4">
-                  <h3 class="team-caption">Михаил Ермаков</h3>
-                  <p class="team-text" lang="en">UI Designer</p>
+                  <div class="team-box">
+                     <h3 class="team-caption">Михаил Ермаков</h3>
+                     <p class="team-text" lang="en">UI Designer</p>
+                  </div>
                </li>
             </ul>
-         
-         </section>
-      </div>
+         </div>
+      </section>
+      
    </main>
-   <!-- Подвал -->
-   <footer class="footer-bgc">
-      <div class="container footer">
-         <a href="./index.html" rel="noopener noreferrer" class="logo footer" lang="en">Web<span
+   <!-------------------------------------------------------Footer -->
+   <footer class="footer">
+      <div class="container">
+         <a href="./index.html" rel="noopener noreferrer" class="logo" lang="en">Web<span
                class="logo-secondary">Studio</span></a>
          <address class="address">
             <p class="address-destination">г. Киев, пр-т Леси Украинки, 26</p>
